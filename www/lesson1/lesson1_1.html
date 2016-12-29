@@ -1,0 +1,160 @@
+<!--Lesson1 HTML入力の効率化-->
+<!--1-1 CSSのおさらい-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>スタイルシートの設定</title>
+<style>
+/*ここにスタイルシートを設定する*/
+body{
+  background: lightsteelblue;
+}
+
+
+/*ここにスタイルシートを設定する//*/
+</style>
+
+</head>
+
+<body class="lesson1">
+  <!--ページヘッダ部分-->
+  <div>
+    <h1>ページ見出し</h1>
+    <p>ここにキャッチコピーが入ります</p>
+    <!--ページグローバルナビゲーション-->
+    <div>
+      <ul>
+        <li>リスト1</li>
+        <li>リスト2</li>
+        <li>リスト3</li>
+        <li>リスト4</li>
+      </ul>
+    </div>
+    <!--ページグローバルナビゲーション//-->
+  </div>
+  <!--ページヘッダ部分//-->
+  <!--ページメイン部分-->
+  <div>
+    <!--サブコンテンツ-->
+    <div>
+      <ol>
+        <li>番号付きリスト1</li>
+        <li>番号付きリスト2</li>
+        <li>番号付きリスト3</li>
+        <li>番号付きリスト4</li>
+      </ol>
+    </div>
+    <!--サブコンテンツ//-->
+    <!--コンテンツ部-->
+    <div>
+      <section>
+        <h2>セクション見出し</h2>
+        <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+      </section>
+    </div>
+    <!--コンテンツ部//-->
+  </div>
+  <!--ページメイン部分//-->
+  <!--ページフッター部分-->
+  <div>
+    <small>copy right xxxxx</small>
+  </div>
+    <!--ページフッター部分//-->
+
+
+
+  <!--追加スタイル  -->
+  <style>
+    .lesson1 {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .lesson1 * {
+      box-sizing: border-box;
+    }
+    
+    header {
+      background: lightslategray;
+      margin: 0 0 1rem;
+      padding: 0;
+      width: 100%;
+    }
+    
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav {
+      width: 100%;
+    }
+    
+    nav>ul {
+      display: table;
+      width: 100%;
+      margin: 0;
+      padding: 0 1rem;
+      background: grey;
+    }
+    
+    nav>ul>li {
+      list-style: none;
+      padding: .5rem 1rem;
+      text-align: center;
+      display: table-cell;
+      background: lightgreen;
+      border: 1px solid gray;
+    }
+    
+    main {
+      margin: 0 auto 6rem;
+      overflow: hidden;
+      max-width: 960px;
+    }
+    
+    aside {
+      margin: 0;
+      padding: 1rem;
+      float: left;
+      width: 25%;
+      border: 1px solid #ccc;
+    }
+    
+    aside>ol {
+      margin: 0;
+      padding: 0 1rem;
+    }
+    
+    aside>ol>li {
+      padding: 1rem;
+    }
+    
+    .contents {
+      float: left;
+      width: calc(75% -2rem);
+      margin: 0 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+    
+    footer {
+      background: lightslategray;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  </style>
+  
+  <!--追加スタイル//-->
+</body>
+
+</html>

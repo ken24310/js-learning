@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>お問合せフォーム制作</h1>
+    </header>
+    <form>
+      <!--名前部分-->
+      <fieldset class="form-group">
+        <label>お名前</label>
+        <input type="password" class="form-control" placeholder="お名前" name="">
+      </fieldset>
+      <!--メールアドレス部分-->
+      <fieldset class="form-group">
+        <label>メール・アドレス</label>
+        <input type="email" class="form-control" placeholder="メール・アドレス" name="">
+      </fieldset>
+      <!--性別部分-->
+      <fieldset class="form-group">
+        <div class="radio">
+          <label><input type="radio" name="" value="option1"> ラジオボタン１</label>
+          <label><input type="radio" name="" value="option2"> ラジオボタン２</label>
+        </div>
+      </fieldset>
+      <!--質問カテゴリ-->
+      <fieldset class="form-group">
+        <label>質問するカテゴリ</label>
+        <select class="form-control">
+          <option value="1">選択肢１</option>
+          <option value="2">選択肢２</option>
+          <option value="3">選択肢３</option>
+        </select>
+      </fieldset>
+      <!--ボタン部分-->
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">送信</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

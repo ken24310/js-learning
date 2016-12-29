@@ -1,0 +1,152 @@
+<!--Lesson1 HTML入力の効率化-->
+<!--1-2 Bootstrapの活用-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    -->
+  <title>スタイルシートの設定</title>
+</head>
+
+<body class="lesson1">
+  <!--サイトコンテナ(container-fluid)-->
+  <div class="container-fluid">
+    <!--ページヘッダ部分-->
+    <header class="jumbotron">
+      <h1>
+        <a href="http://bootstrap3.cyberlab.info/">Bootstrapを使ったフォーム画面</a>
+        <small>Bootstrapのクラス名を使うことで簡単にWebページを作成できます。</small>
+      </h1>
+      
+    </header>
+    <!--ページヘッダ部分//-->
+    <!--ページメイン部分-->
+    <main class="row">
+      <!--コンテンツ部-->
+      <div class="col-xs-12">
+        <section>
+          <h2>bootstrapでフォーム作成</h2>
+        </section>
+        <!--フォーム1-->
+        <form class="hidden">
+          <legend>フォーム1</legend>
+          <fieldset class="form-group">
+            <label>テキストボックス1</label>
+            <input type="text" class="form-control">
+            <label>パスワード入力</label>
+            <input type="password" class="form-control">
+          </fieldset>
+          <div class="form-group">
+            <label>テキストボックス2</label>
+            <input type="text" class="form-control">
+            <label>選択</label>
+            <select class="form-control">
+              <option>選択肢１</option>
+              <option>選択肢２</option>
+              <option>選択肢３</option>
+            </select>
+          </div>
+        </form>
+        <!--フォーム2-->
+        <form class="hidden">
+          <legend>フォーム2</legend>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="checkboxA"> 
+              チェックボックスＡ
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="checkboxB">
+               チェックボックスＢ
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" value="option1">
+              ラジオボタン１
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" value="option2">
+              ラジオボタン２
+              </label>
+          </div>
+          <button type="submit" class="btn btn-default">送信</button>
+          <button type="submit" class="btn btn-success">送信</button>
+          <button type="submit" class="btn btn-primary btn-lg">送信</button>
+        </form>
+        <!--フォーム3-->
+        <form class="hidden">
+          <legend>フォーム3</legend>
+          <fieldset class="form-group form-group-lg">
+            <label>テキストボックス1</label>
+            <input type="text" class="form-control">
+            <label>パスワード入力</label>
+            <input type="password" class="form-control">
+          </fieldset>
+          <div class="form-group has-error">
+            <label>テキストボックス2</label>
+            <input type="text" class="form-control">
+            <label>選択</label>
+            <select class="form-control">
+              <option>選択肢１</option>
+              <option>選択肢２</option>
+              <option>選択肢３</option>
+            </select>
+          </div>
+          <!--横並び複数配置する場合(sizeもしくはwidthの調整が必要)-->
+          <fieldset class="form-group">
+            <label class="control-label">年月日</label>
+            <div class="form-inline">
+              <input type="text" class="form-control" size="4"><label>年</label>
+              <input type="text" class="form-control" size="2"><label>月</label>
+              <input type="text" class="form-control" size="2"><label>日</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!--コンテンツ部//-->
+    </main>
+    <!--ページメイン部分//-->
+    <!--ページフッター部分-->
+    <footer>
+      <small>copy right xxxxx</small>
+    </footer>
+    <!--ページフッター部分//-->
+  </div>
+  <!--サイトコンテナ-->
+  <!--基本スタイル-->
+  <style>
+    header {
+      margin-bottom: 2rem;
+    }
+    
+    nav {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    form {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+    
+    main {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</body>
+
+</html>

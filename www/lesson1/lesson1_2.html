@@ -1,0 +1,114 @@
+<!--Lesson1 HTML入力の効率化-->
+<!--1-2 Bootstrapの活用-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    -->
+  <title>スタイルシートの設定</title>
+</head>
+
+<body>
+  <!--サイトコンテナ(container-fluid)-->
+  <div class="container-fluid">
+    <!--ページヘッダ部分-->
+    <header class="row">
+      <!--jumbotron(ジャンボトロン部)-->
+      <div class="">
+      <h1>
+        <a href="http://bootstrap3.cyberlab.info/">Bootstrapを使った簡易ページ</a>
+      </h1>
+      <p>Bootstrapのクラス名を使うことで簡単にWebページを作成できます。</p>
+      </div>
+    </header>
+    <!--ページヘッダ部分//-->
+    <!--ページグローバルナビゲーション-->
+    <nav class="row">
+      <ul class="nav">
+        <li class="">
+          <a href="#">リスト1</a>
+        </li>
+        <li>
+          <a href="#">リスト2</a>
+        </li>
+        <li>
+          <a href="#">リスト3</a>
+        </li>
+        <li>
+          <a href="#">リスト4</a>
+        </li>
+        <li>
+          <a href="#">リスト5</a>
+        </li>
+      </ul>
+    </nav>
+    <!--ページグローバルナビゲーション//-->
+    <!--ページメイン部分-->
+    <main class="row">
+      <!--サブコンテンツ 全体の4/12のサイズ-->
+      <aside class="">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#">番号付きリスト1</a>
+          </li>
+          <li class="">
+            <a href="#">番号付きリスト2</a>
+          </li>
+          <li class="">
+            <a href="#">番号付きリスト3</a>
+          </li>
+          <!--<li class="list-group-item"><a href="">
+          <h4 class="list-group-item-title">リストタイトル</h4><p class="list-group-item-text">サブタイトル</p>
+          </a>
+          </li>-->
+        </ul>
+      </aside>
+      <!--サブコンテンツ//-->
+      <!--コンテンツ部 全体の8/12のサイズ-->
+      <div class="col-xs-8">
+        <section>
+          <h2>セクション見出し<small>サブタイトル</small></h2>
+          <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+        </section>
+      </div>
+      <!--コンテンツ部//-->
+    </main>
+    <!--ページメイン部分//-->
+    <!--ページフッター部分-->
+    <footer>
+      <small>copy right xxxxx</small>
+    </footer>
+    <!--ページフッター部分//-->
+  </div>
+  <!--サイトコンテナ-->
+  <!--基本スタイル-->
+  <style>
+    header {
+      margin-bottom: 2rem;
+    }
+    
+    nav {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    form {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+    
+    main {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
+</body>
+
+</html>
