@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja">
 
+<!--lesson2-2フォーム送信先-->
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../js/get_param.js"></script>
+
+  
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>お問合せフォーム制作(サンプル)</h1>
+      <h1>お問合せフォーム制作確認画面</h1>
     </header>
-    <form>
+    <!--『method=get』html末尾ににパラメータを追加して送信する-->
+    <form method="get" action="lesson2_1c.html">
       <!--名前部分-->
       <fieldset class="form-group">
-        <label>お名前</label>
-        <input type="text" class="form-control" placeholder="お名前" name="">
+        <label for="user_name">お名前</label>
+        <p id="param_user_name" class="form-control-static">user_name</p>
       </fieldset>
       <!--メールアドレス部分-->
       <fieldset class="form-group">
         <label>メールアドレス</label>
-        <input type="email" class="form-control" placeholder="example@mail.com" name="">
+                <p  id="param_email" class="form-control-static">email</p>
       </fieldset>
       <!--性別部分-->
       <fieldset class="form-group">
         <div class="radio">
-          <label><input type="radio" name="" value=""> 男性</label>
-          <label><input type="radio" name="" value=""> 女性</label>
+          <label>性別</label>
+          <p id="param_sex"class="form-control-static">sex</p>
         </div>
       </fieldset>
       <!--質問カテゴリ-->
       <fieldset class="form-group">
         <label>質問するカテゴリ</label>
-        <select class="form-control">
-          <option value="1">選択肢１</option>
-          <option value="2">選択肢２</option>
-          <option value="3">選択肢３</option>
-        </select>
+        <p id="param_category" class="form-control-static">category</p>
       </fieldset>
       <!--質問内容-->
       <fieldset class="form-group">
         <label>質問内容を入力してください。</label>
-        <textarea class="form-control" name="" cols="30" rows="10"></textarea>
+        <p id="param_summary" class="form-control-static">summary</p>
       </fieldset>
       <!--ボタン部分-->
       <fieldset class="form-group">
