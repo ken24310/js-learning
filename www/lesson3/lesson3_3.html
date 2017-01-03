@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>レッスン3-3</title>
+  <!--bootstrap.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap.css//-->
+  <!--外部JSファイル-->
+  <script src="answer3.js"></script>
+    <script src="closure.js"></script>
+  <!--内部部JS-->
+  <script>
+
+  </script>
+  <!--JSここまで//-->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="heading">レッスン3-3変数のスコープ</h1>
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item" id="nav1">
+            <a href="#">JAVA</a>
+          </li>
+          <li class="nav-item" id="nav2">
+            <a href="#">HTML</a>
+          </li>
+          <li class="nav-item" id="nav3">
+            <a href="#">SQL</a>
+          </li>
+          <li class="nav-item" id="nav4">
+            <a href="#">Javascript</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="#">リスト1</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">リスト2</a>
+      </li>
+      <li class="list-group-item">
+        <a href="#">リスト3</a>
+      </li>
+      <li class="list-group-item active">
+        <a href="#">リスト4</a>
+      </li>
+    </ul>
+    <!--画像-->
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-4">
+        <img id="main-img" src="../images/1.jpg" alt="画像" class="img-responsive img-circle">
+      </div>
+    </div>
+    <!--ボタン部分-->
+    <div class="text-center">
+      <button onclick="btnEvent()" type="button" class="btn btn-success btn-lg">ボタンクリックでイベント発生</button>
+    </div>
+        <div class="text-center">
+      <button type="button" id="eventBtn" class="btn btn-success btn-lg">ボタンクリックでイベント発生</button>
+    </div>
+  </div>
+  <!--container//-->
+  <!--Body最下部にJS-->
+  <script>
+
+  
+  </script>
+  <!--JSここまで//-->
+</body>
+
+</html>

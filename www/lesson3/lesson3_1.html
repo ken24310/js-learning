@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>レッスン3-1</title>
+  <!--bootstrap.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap.css//-->
+  <!--JSここから-->
+  <script>
+//1.メッセージウィンドウを表示するJS
+  window.alert("hello world!!");
+
+//コンソール表示させる場合
+  console.log("ブラウザには表示されません。");
+
+/* 2.変数も使用可能
+var 変数名 = 値;)
+*/
+
+var msg;
+msg ="Good by World";
+
+
+
+/* 3.関数化しておくと便利
+function 関数名 (引数){
+  処理;…
+}
+*/
+function msgText(args) {
+  window.alert(args);
+}
+
+// 4.関数名だけで実行される
+
+//msgText("おはよう世界")
+
+
+  </script>
+  <!--JSここまで//-->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>レッスン3-1</h1>
+    </header>
+    <!--body内にもJSは書ける-->
+    <script>
+    document.write("このメッセージはJSで書かれたものです。");
+    
+    </script>
+    <ul class="list-group">
+      <!--タグ内にもJSは書ける-->
+      <script>
+      //LOOP文も使える
+      for (var i = 0; i < 1; i++){
+        document.write(i);
+      }
+      </script>
+      <!--タグ内にもJSは書ける//-->
+    </ul>
+      <!--ボタン部分-->
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg">ボタンクリックでイベント発生</button>
+          </div>
+  </div>
+  <!--container//-->
+</body>
+
+</html>
