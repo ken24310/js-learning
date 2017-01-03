@@ -6,49 +6,55 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="../js/get_param.js"></script>
-
-  
+  <!--フォーム処理用JS-->
+  <script src="../js/get_param.js"></script> 
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>お問合せフォーム制作確認画面</h1>
+      <h1 id="heading1">お問合せフォーム制作確認画面</h1>
     </header>
-    <!--『method=get』html末尾ににパラメータを追加して送信する-->
-    <form method="get" action="lesson2_1c.html">
+    <!--『method=post』パラメータはつけず情報をサーバーに送信する-->
+    <form id="confirm_form" method="post" action="complete.html">
       <!--名前部分-->
       <fieldset class="form-group">
         <label for="user_name">お名前</label>
-        <p id="param_user_name" class="form-control-static">user_name</p>
+        <p id="param_user_name" class="form-control-static">(未入力)</p>
+        <!--input type="hidden" は画面では非表示されるテキストフォーム
+        スクリプトで前画面の値が格納されている-->
+        <input type="hidden" id="user_name" name="user_name">
       </fieldset>
       <!--メールアドレス部分-->
       <fieldset class="form-group">
         <label>メールアドレス</label>
-                <p  id="param_email" class="form-control-static">email</p>
+                <p  id="param_email" class="form-control-static">(未入力)</p>
+                <input type="hidden" id="email" name="email">
       </fieldset>
       <!--性別部分-->
       <fieldset class="form-group">
         <div class="radio">
           <label>性別</label>
-          <p id="param_sex"class="form-control-static">sex</p>
+          <p id="param_sex"class="form-control-static">(未入力)</p>
+          <input type="hidden" id="sex" name="sex">
         </div>
       </fieldset>
       <!--質問カテゴリ-->
       <fieldset class="form-group">
         <label>質問するカテゴリ</label>
-        <p id="param_category" class="form-control-static">category</p>
+        <p id="param_category" class="form-control-static">(未入力)</p>
+        <input type="hidden" id="category" name="category">
       </fieldset>
       <!--質問内容-->
       <fieldset class="form-group">
         <label>質問内容を入力してください。</label>
-        <p id="param_summary" class="form-control-static">summary</p>
+        <p id="param_summary" class="form-control-static">(未入力)</p>
+        <input type="hidden" id="summary" name="summary">
       </fieldset>
       <!--ボタン部分-->
       <fieldset class="form-group">
         <div class="col-xs-5">
-          <button type="button" class="btn btn-default">戻る</button>
+          <a href="index.html" class="btn btn-default">戻る</a>
         </div>
         <div class="col-xs-7">
           <button type="submit" class="btn btn-success btn-lg">送信</button>
@@ -56,6 +62,10 @@
       </fieldset>
     </form>
   </div>
+<script>
+
+</script>
+
 </body>
 
 </html>

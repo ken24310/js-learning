@@ -20,11 +20,11 @@ body{
 
 <body class="lesson1">
   <!--ページヘッダ部分-->
-  <div>
+  <div class="">
     <h1>ページ見出し</h1>
     <p>ここにキャッチコピーが入ります</p>
     <!--ページグローバルナビゲーション-->
-    <div>
+    <div class="">
       <ul>
         <li>リスト1</li>
         <li>リスト2</li>
@@ -36,9 +36,9 @@ body{
   </div>
   <!--ページヘッダ部分//-->
   <!--ページメイン部分-->
-  <div>
+  <div class="">
     <!--サブコンテンツ-->
-    <div>
+    <div class="">
       <ol>
         <li>番号付きリスト1</li>
         <li>番号付きリスト2</li>
@@ -48,7 +48,7 @@ body{
     </div>
     <!--サブコンテンツ//-->
     <!--コンテンツ部-->
-    <div>
+    <div class="">
       <section>
         <h2>セクション見出し</h2>
         <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
@@ -58,7 +58,7 @@ body{
   </div>
   <!--ページメイン部分//-->
   <!--ページフッター部分-->
-  <div>
+  <div class="">
     <small>copy right xxxxx</small>
   </div>
     <!--ページフッター部分//-->
@@ -67,6 +67,7 @@ body{
 
   <!--追加スタイル  -->
   <style>
+  /*設定のリセット*/
     .lesson1 {
       margin: 0;
       padding: 0;
@@ -77,8 +78,7 @@ body{
     .lesson1 * {
       box-sizing: border-box;
     }
-    
-    header {
+     .header {
       background: lightslategray;
       margin: 0 0 1rem;
       padding: 0;
@@ -95,11 +95,11 @@ body{
       padding: 0;
     }
     
-    nav {
+    .nav {
       width: 100%;
     }
     
-    nav>ul {
+    .nav>ul {
       display: table;
       width: 100%;
       margin: 0;
@@ -107,7 +107,7 @@ body{
       background: grey;
     }
     
-    nav>ul>li {
+    .nav>ul>li {
       list-style: none;
       padding: .5rem 1rem;
       text-align: center;
@@ -116,13 +116,13 @@ body{
       border: 1px solid gray;
     }
     
-    main {
+    .main {
       margin: 0 auto 6rem;
       overflow: hidden;
       max-width: 960px;
     }
     
-    aside {
+    .aside {
       margin: 0;
       padding: 1rem;
       float: left;
@@ -130,12 +130,12 @@ body{
       border: 1px solid #ccc;
     }
     
-    aside>ol {
+    .aside>ol {
       margin: 0;
       padding: 0 1rem;
     }
     
-    aside>ol>li {
+    .aside>ol>li {
       padding: 1rem;
     }
     
@@ -147,7 +147,7 @@ body{
       border: 1px solid #ccc;
     }
     
-    footer {
+    .footer {
       background: lightslategray;
       padding: 2rem 1rem;
       text-align: center;
