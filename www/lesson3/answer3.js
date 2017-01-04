@@ -3,6 +3,7 @@ window.alert("OK");
 
 //2.ボタンをクリックしたときに関数を実行する
 function btnEvent() {
+  window.alert("OK");
 }
 
 //3.idを取得しDOMを操作する
@@ -50,7 +51,7 @@ btnCountNum = btnMinNum;
 // カウント変数を使って画像を変更する関数
 function changeImg() {
   //画像フォルダ
-  var imgDir = "../images/";
+  var imgDir = "../assets/images/";
   // srcに入る画像ファイルパスを作成
   var imgFilePath = imgDir + btnCountNum + ".jpg";
   //画像のIDを取得

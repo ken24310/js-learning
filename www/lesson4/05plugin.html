@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>jQueryプラグイン　デモ</title>
+
+<style>
+img{max-width:100%;}
+ul{list-style:none;}
+.hako_size1{width:140px; margin:20px}
+.hako_size2{width:320px; margin:20px}
+.hako_size3{width:500px; margin:20px}
+.hako_size4{width:960px;}
+#content{width:960px; margin:10px auto;}
+</style>
+
+
+<!--////////////////////CSSファイルを読み込ませる-->
+
+
+<!--ここにbx sliderのCSSを読み込む-->
+
+
+<!--ここにbx sliderのCSSを読み込むここまで-->
+
+
+<!--ここにcolorboxのCSSを読み込む-->
+
+
+<!--ここにcolorboxのCSSを読み込むここまで-->
+
+
+
+
+
+<!--//////////////////// jQueryファイルを読み込ませる-->
+
+<!--ここにjQuery.jsを読み込む-->
+
+
+<!--ここにjQuery.jsを読み込むここまで-->
+
+
+
+
+
+
+<!--ここにbxSlider.jsを読み込む-->
+
+
+<!--ここにbxSlider.jsを読み込むここまで-->
+
+
+
+
+
+
+<!--ここにmasonry.jsを読み込む-->
+
+
+<!--ここににmasonry.jsを読み込むここまで-->
+
+
+
+
+
+<!--ここにcolorbox.jsを読み込む-->
+
+
+<!--ここにcolorbox.jsを読み込むここまで-->
+
+
+
+
+<!--////////////////////jQueryを操作する-->
+
+<script>
+$(document).ready(function(){
+	
+	
+//この中にbxsliderの処理を記述 開始
+
+	//bxsliderの表示設定
+	//sample1内の画像を動かす
+	//'.bxslider'を'sample1'に書き換えてね
+	
+	$('.sample1').bxSlider({
+		mode: 'horizontal',	//'horizontal', 'vertical', 'fade'
+
+
+
+		captions: false	//true=imgタグのtitle属性を表示［true=表示、false=非表示］
+	});
+
+//この中にbxslider処理を記述 終了
+
+
+
+
+//この中にmarsonryの処理を記述 開始
+
+	 $('#content').masonry({
+    itemSelector: '.hako',
+    columnWidth: 180, 
+    isFitWidth: true  //親要素の幅に合わせてカラム数を自動調整
+  });  
+
+//この中にmasonry処理を記述 終了
+
+
+//colorboxで画像モーダルウィンドウ表示
+//画像表示：初期設定
+
+
+
+
+
+
+
+
+
+
+//この中にcolorbox処理を記述 終了
+
+});
+</script>
+
+
+<!--//////////////////////////jQueryを操作するここまで-->
+
+
+
+
+</head>
+<body>
+<div id="content">
+<h1 class="hako hako_size3">jquery プラグイン</h1>
+<!-- スクロール横画像 -->
+<div class="slider hako hako_size4">
+
+
+	<ul class="sample1">
+	<li><img src="images/1.jpg" title="Aの画像を表示します。" alt="A"></li>
+	<li><img src="images/2.jpg" title="Bの画像を表示します。" alt="B"></li>
+	<li><img src="images/3.jpg" title="Cの画像を表示します。" alt="C"></li>
+	<li><img src="images/4.jpg" title="Dの画像を表示します。" alt="D"></li>
+	<li><img src="images/5.jpg" title="Eの画像を表示します。サイズが大きい" alt="E"></li>
+	</ul>
+</div>
+<!-- スクロール横画像 -->
+
+
+<ul class="sample2">
+	<li class="hako hako_size1"><a class="colorbox" href="images/1.jpg"><img src="images/1.jpg" title="Aの画像を表示します。" alt="A"></a></li>
+	<li class="hako hako_size1"><a class="colorbox" href="images/2.jpg"><img src="images/2.jpg" title="Bの画像を表示します。" alt="B"></a></li>
+	<li class="hako hako_size1"><a class="colorbox" href="images/3.jpg"><img src="images/3.jpg" title="Cの画像を表示します。" alt="C"></a></li>
+	<li class="hako hako_size1"><a class="colorbox" href="images/4.jpg"><img src="images/4.jpg" title="Dの画像を表示します。" alt="D"></a></li>
+	<li class="hako hako_size2"><a class="colorbox" href="images/5.jpg"><img src="images/5.jpg" title="Eの画像を表示します。" alt="E"></a></li>
+	<li class="hako hako_size2"><a class="colorbox" href="images/1.jpg"><img src="images/1.jpg" title="Aの画像を表示します。" alt="A"></a></li>
+	<li class="hako hako_size2"><a class="colorbox" href="images/2.jpg"><img src="images/2.jpg" title="Bの画像を表示します。" alt="B"></a></li>
+	<li class="hako hako_size2"><a class="colorbox" href="images/3.jpg"><img src="images/3.jpg" title="Cの画像を表示します。" alt="C"></a></li>
+	<li class="hako hako_size3"><a class="colorbox" href="images/4.jpg"><img src="images/4.jpg" title="Dの画像を表示します。" alt="D"></a></li>
+	<li class="hako hako_size3"><a class="colorbox" href="images/5.jpg"><img src="images/5.jpg" title="Eの画像を表示します。" alt="E"></a></li>
+	</ul>
+
+
+
+
+</div>
+</body>
+</html>

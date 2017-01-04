@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event_change1-1.html</title>
+<style>input{width:300px;}</style>
+<script src="script/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function(){
+//この中に処理を記述 開始
+	
+	$(window).scroll(function(){
+		
+		$("div").css("color","#f00");
+		
+	
+		
+		
+		
+	});
+	
+	
+	
+//この中に処理を記述 終了
+});
+</script>
+</head>
+<body>
+<h1>リサイズ</h1>
+<p><input type="text" id="change_text" placeholder="例）12345"></p>
+<p>名前：<input type="text" id="name" value="ここをクリックしてフォーカスを当てます"></p>
+<p>Email：<input type="text" id="email" value="ここをクリックしてフォーカスを当てます"></p>
+
+
+
+<p>
+<!--
+同じ値をセレクトした場合は変更がないため、changeイベントは動作しません
+-->
+<select id="change_sct">
+	<option value="1">よい子はほかを選択してね１</option>
+	<option value="2">よい子はほかを選択してね２</option>
+	<option value="3">よい子はほかを選択してね３</option>
+	<option value="4">よい子はほかを選択してね４</option>
+	<option value="5">よい子はほかを選択してね５</option>
+	<option value="6">よい子はほかを選択してね６</option>
+</select>
+</p>
+
+<p><img src="images/2.jpg" alt="画像を変えよう" width="300"></p>
+<p>キーボードを押してみよう</p>
+
+
+<div>
+
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+<p>スクロール</p>
+</div>
+
+</body>
+</html>

@@ -1,62 +1,19 @@
 <!DOCTYPE html>
-
-<!--lesson2-1フォーム操作-->
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Javascript</title>
+  <!--bootstrapのcssを読み込みたい-->
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1>お問合せフォーム制作(サンプル)</h1>
-    </header>
-    <!--『method=get』html末尾ににパラメータを追加して送信する-->
-    <form method="get" action="confirm.html">
-      <!--名前部分-->
-      <fieldset class="form-group">
-        <label for="user_name">お名前<span class="text-danger">※必須</span></label>
-        <input type="text" class="form-control" placeholder="お名前" name="user_name">
-      </fieldset>
-      <!--メールアドレス部分-->
-      <fieldset class="form-group">
-        <label>メールアドレス<span class="text-danger">※必須</span></label>
-        <input type="email" class="form-control" placeholder="example@mail.com" name="email">
-      </fieldset>
-      <!--性別部分-->
-      <fieldset class="form-group">
-        <div class="radio">
-          <label><input type="radio" name="sex" value="1"> 男性</label>
-          <label><input type="radio" name="sex" value="2"> 女性</label>
-        </div>
-      </fieldset>
-      <!--質問カテゴリ-->
-      <fieldset class="form-group">
-        <label>質問するカテゴリ</label>
-        <select class="form-control" name="category">
-          <option value="1">選択肢１</option>
-          <option value="2">選択肢２</option>
-          <option value="3">選択肢３</option>
-        </select>
-      </fieldset>
-      <!--質問内容-->
-      <fieldset class="form-group">
-        <label>質問内容を入力してください。</label>
-        <textarea class="form-control" name="summary" cols="30" rows="10"></textarea>
-      </fieldset>
-      <!--ボタン部分-->
-      <fieldset class="form-group">
-        <div class="col-xs-5">
-          <a href="../index.html" class="btn btn-default">戻る</a>
-        </div>
-        <div class="col-xs-7">
-          <button type="submit" class="btn btn-success btn-lg">確認する</button>
-        </div>
-      </fieldset>
-    </form>
-  </div>
+  <h1 id="midashi">Webフォームについてトップページ</h1>
+  <ul>
+    <li>
+      <a href="form/index.html">Webフォーム(入力フォーム)</a>
+    </li>
+  </ul>
 </body>
 
 </html>

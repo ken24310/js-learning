@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQueryセレクタ練習</title>
+<link rel="stylesheet" href="style/style.css">
+
+<!--ここにjQery.jsを読み込み-->
+<script src="script/jquery-1.11.3.min.js"></script>
+<!--ここにjQery.jsを読み込みここまで-->
+
+<!--この中に処理を記述 開始-->
+<script>
+
+$(document).ready(function() {
+	
+	
+	
+});
+
+
+
+</script>
+
+<!--この中に処理を記述 開始ここまで-->
+
+</head>
+<body>
+
+<!--containerここから-->
+<div id="container">
+
+
+
+<!-- スライダー横画像 -->
+
+	<ul class="sample1">
+	<li><img src="images/1.jpg" title="Aの画像を表示します。" alt="A"></li>
+	<li><img src="images/2.jpg" title="Bの画像を表示します。" alt="B"></li>
+	<li><img src="images/3.jpg" title="Cの画像を表示します。" alt="C"></li>
+	<li><img src="images/4.jpg" title="Dの画像を表示します。" alt="D"></li>
+	<li><img src="images/5.jpg" title="Eの画像を表示します。" alt="E"></li>
+	</ul>
+
+<!-- スライダー横画像 -->
+
+
+	<dl class="slide_list">
+		<dt>ここをクリックすると</dt>
+
+		<dd>ここが出たり入ったり</dd>
+		<dd>ここが出たり入ったり</dd>
+		<dd>ここが出たり入ったり</dd>
+		<dd>ここが出たり入ったり</dd>
+		<dd>ここが出たり入ったり</dd>
+		<dd>ここが出たり入ったり</dd>
+	</dl>
+
+
+	<ul class="change_grp">
+		<li id="change_list">リスト表示</li>
+		<li id="change_box">画像ボックス表示</li>
+	</ul>
+
+
+
+	<article id="img_grp" class="img_box">
+
+		<figure> <img src="images/1.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+		<figure> <img src="images/2.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+		<figure> <img src="images/3.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+		<figure> <img src="images/4.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+		<figure> <img src="images/5.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+		<figure> <img src="images/6.jpg" alt="画像">
+			<figcaption>画像の説明</figcaption>
+		</figure>
+
+
+	</article>
+
+
+<figure class="select_img"> 
+	
+	<img src="images/1.jpg" alt="画像の中身が変わるよ">
+
+		<figcaption>
+			<select>
+				<option value="1">1番目の画像</option>
+				<option value="2">2番目の画像</option>
+				<option value="3">3番目の画像</option>
+				<option value="4">4番目の画像</option>
+				<option value="5">5番目の画像</option>
+				<option value="6">6番目の画像</option>
+			</select>
+		</figcaption>
+	</figure>
+
+
+
+
+
+	<p class="goto_page_top"><a href="#">ページトップへ</a></p>
+
+
+	<footer>
+		<p>フッター</p>
+	</footer>
+
+</div>
+<!--containerここまで-->
+</body>
+</html>
