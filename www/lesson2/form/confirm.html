@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-
 <!--lesson2-2フォーム送信先-->
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--フォーム処理用JS-->
-  <script src="../../assets/scripts/get_param.js"></script> 
+  <script src="../../assets/scripts/get_param.js"></script>
+  <script>
+  // HTML読み込み後実行
+window.onload = function () {
+  // クエリパラメータを読み込んでテキスト表示
+  writeQueryString("param_");
+}
+  </script>
 </head>
 
 <body>
@@ -28,14 +35,14 @@
       <!--メールアドレス部分-->
       <fieldset class="form-group">
         <label>メールアドレス</label>
-                <p  id="param_email" class="form-control-static">(未入力)</p>
-                <input type="hidden" id="email" name="email">
+        <p id="param_email" class="form-control-static">(未入力)</p>
+        <input type="hidden" id="email" name="email">
       </fieldset>
       <!--性別部分-->
       <fieldset class="form-group">
         <div class="radio">
           <label>性別</label>
-          <p id="param_sex"class="form-control-static">(未入力)</p>
+          <p id="param_sex" class="form-control-static">(未入力)</p>
           <input type="hidden" id="sex" name="sex">
         </div>
       </fieldset>
@@ -62,10 +69,9 @@
       </fieldset>
     </form>
   </div>
-<script>
+  <script>
 
 </script>
-
 </body>
 
 </html>

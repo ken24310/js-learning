@@ -37,8 +37,3 @@ function writeQueryString(suffix) {
 }
 
 
-// HTML読み込み後実行
-window.onload = function () {
-  // クエリパラメータを読み込んでテキスト表示
-  writeQueryString("param_");
-}

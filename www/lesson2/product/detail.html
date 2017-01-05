@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>商品詳細画面</title>
+  <!--デザインはBootstrapで作成-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!--Javascript(パラメータ取得と商品データ読み込みのために必要)-->
+<!--jQuery(3.x系)-->
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<!--クエリパラメータを取得するjs-->
+<script src="../../assets/scripts/get_param.js"></script>
+<!--商品情報のデータを操作するjs-->
+<script src="product.js"></script>
+<script>
+
+</script>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!--header-->
+    <header class="row">
+      <h1>商品詳細画面</h1>
+    </header>
+    <!--header//-->
+    <!--product main-->
+    <main class="row JSProductItem">
+      <!--商品名-->
+      <header class="page-header">
+        <h2 class="JSProductItemName">商品名</h2>
+      </header>
+      <!--商品画像ブロック-->
+      <div class="col-xs-6">
+        <div class="thumbnail">
+          <img class="JSProductItemImg" src="../../assets/images/1.jpg" alt="">
+        </div>
+      </div>
+      <!--商品説明ブロック-->
+      <div class="col-xs-6 JSProductItemCaption">
+        <!--商品詳細説明-->
+        <dl class="dl-horizontal JSProductItemCaptionName">
+          <dt>商品名：</dt>
+          <dd>商品A</dd>
+        </dl>
+        <dl class="dl-horizontal JSProductItemCaptionPrice">
+          <dt>価格：</dt>
+          <dd>0<span>円</span></dd>
+        </dl>
+                <dl class="dl-horizontal JSProductItemCaptionSize">
+          <dt>サイズ：</dt>
+          <dd>FREE</dd>
+        </dl>
+                <dl class="dl-horizontal JSProductItemCaptionDescription">
+          <dt>商品説明：</dt>
+          <dd>1234567890</dd>
+        </dl>
+        <div><button class="btn btn-block btn-success">カートに入れる</button></div>
+      </div>
+    </main>
+    <!--product main//-->
+          <aside class="row">
+            <div class="text-center">
+        <a class="btn btn-primary" href="list.html">商品一覧に戻る</a>
+        </div>
+      </aside>
+  </div>
+  <!--container-->
+</body>
+
+</html>
