@@ -6,13 +6,17 @@
   <title>商品一覧画面</title>
   <!--デザインはBootstrapで作成-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!--Javascript(パラメータ取得と商品データ読み込みのために必要)-->
-<!--jQuery(3.x系)-->
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<!--商品情報のデータを操作するjs-->
-<script src="product.js"></script>
-
+  <!--Javascript(パラメータ取得と商品データ読み込みのために必要)-->
+  <!--jQuery(3.x系)-->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!--商品情報のデータを操作するjs-->
+  <script src="product.js"></script>
+  <script>
+  jQuery(document).ready(function () {
+    //商品リストを自動生成
+    createProductItemList("#JSProductListTree");
+  });
+  </script>
 </head>
 
 <body>
@@ -29,35 +33,7 @@
         <h2>商品カテゴリ1</h2>
       </header>
       <!--商品ブロック-->
-      <div class="col-xs-4">
-        <a href="detail.html?product=1" class="thumbnail">
-          <img src="../../assets/images/1.jpg" alt="">
-          <div class="caption">
-            <h3>商品1</h3>
-            <p class="text-right">0円</p>
-          </div>
-        </a>
-      </div>
-            <!--商品ブロック-->
-      <div class="col-xs-4">
-        <a href="detail.html?product=1" class="thumbnail">
-          <img src="../../assets/images/1.jpg" alt="">
-          <div class="caption">
-            <h3>商品1</h3>
-            <p class="text-right">0円</p>
-          </div>
-        </a>
-      </div>
-            <!--商品ブロック-->
-      <div class="col-xs-4">
-        <a href="detail.html?product=1" class="thumbnail">
-          <img src="../../assets/images/1.jpg" alt="">
-          <div class="caption">
-            <h3>商品1</h3>
-            <p class="text-right">0円</p>
-          </div>
-        </a>
-      </div>
+      <div id="JSProductListTree"></div>
     </main>
     <!--product main//-->
     <aside class="row">

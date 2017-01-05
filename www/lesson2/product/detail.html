@@ -6,19 +6,21 @@
   <title>商品詳細画面</title>
   <!--デザインはBootstrapで作成-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!--Javascript(パラメータ取得と商品データ読み込みのために必要)-->
-<!--jQuery(3.x系)-->
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<!--クエリパラメータを取得するjs-->
-<script src="../../assets/scripts/get_param.js"></script>
-<!--商品情報のデータを操作するjs-->
-<script src="product.js"></script>
-<script>
-
+  <!--Javascript(パラメータ取得と商品データ読み込みのために必要)-->
+  <!--jQuery(3.x系)-->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!--クエリパラメータを取得するjs-->
+  <script src="../../assets/scripts/get_param.js"></script>
+  <!--商品情報のデータを操作するjs-->
+  <script src="product.js"></script>
+  <script>
+jQuery(document).ready(function () {
+        //パラメータから商品IDを取得
+    var params = GetQueryString();
+    //商品詳細データを書き換える
+    changeProductItemDetail(params.product);
+});
 </script>
-
-
 </head>
 
 <body>
@@ -51,23 +53,25 @@
           <dt>価格：</dt>
           <dd>0<span>円</span></dd>
         </dl>
-                <dl class="dl-horizontal JSProductItemCaptionSize">
+        <dl class="dl-horizontal JSProductItemCaptionSize">
           <dt>サイズ：</dt>
           <dd>FREE</dd>
         </dl>
-                <dl class="dl-horizontal JSProductItemCaptionDescription">
+        <dl class="dl-horizontal JSProductItemCaptionDescription">
           <dt>商品説明：</dt>
           <dd>1234567890</dd>
         </dl>
-        <div><button class="btn btn-block btn-success">カートに入れる</button></div>
+        <div>
+          <button class="btn btn-block btn-success">カートに入れる</button>
+        </div>
       </div>
     </main>
     <!--product main//-->
-          <aside class="row">
-            <div class="text-center">
+    <aside class="row">
+      <div class="text-center">
         <a class="btn btn-primary" href="list.html">商品一覧に戻る</a>
-        </div>
-      </aside>
+      </div>
+    </aside>
   </div>
   <!--container-->
 </body>
