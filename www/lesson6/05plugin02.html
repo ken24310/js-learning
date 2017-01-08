@@ -12,16 +12,9 @@
 <!--この中に処理を記述 開始-->
 <script>
 
-$(document).ready(function() {
+jQuery(function($) {
 	
 	
-	//画像をマウスオーバーで半透明
-	$("#img_grp figure").hover(function() {
-		
-		$(this).fadeToggle("fast",0.5);
-		
-	});
-		
 	
 });
 
@@ -36,6 +29,21 @@ $(document).ready(function() {
 
 <!--containerここから-->
 <div id="container">
+
+
+
+<!-- スライダー横画像 -->
+
+	<ul class="sample1">
+	<li><img src="images/1.jpg" title="Aの画像を表示します。" alt="A"></li>
+	<li><img src="images/2.jpg" title="Bの画像を表示します。" alt="B"></li>
+	<li><img src="images/3.jpg" title="Cの画像を表示します。" alt="C"></li>
+	<li><img src="images/4.jpg" title="Dの画像を表示します。" alt="D"></li>
+	<li><img src="images/5.jpg" title="Eの画像を表示します。" alt="E"></li>
+	</ul>
+
+<!-- スライダー横画像 -->
+
 
 	<dl class="slide_list">
 		<dt>ここをクリックすると</dt>

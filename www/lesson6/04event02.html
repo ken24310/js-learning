@@ -12,39 +12,8 @@
 <!--この中に処理を記述 開始-->
 <script>
 
-$(document).ready(function() {
-	
-	
-	//セレクトボックスチェンジで画像を変更
-	$(".select_img").change(function() {
+jQuery(function($) {
 		
-		var img_num;	//セレクトボックスの番号を格納
-		var file_name;	//画像ファイル名を格納
-		
-		
-		img_num = $(".select_img select").val();
-		file_name = "images/" + img_num + ".jpg";
-		
-		
-		window.alert(file_name);
-		
-	});
-	
-	
-	//ここをクリックボタンクリックでリストが開く
-	$(".slide_list dt").click(function() {
-		$(".slide_list dd").slideToggle("fast");
-		
-	});
-	
-	
-	
-	//スクロールしたとき「ページトップへ」ボタン表示
-	$(window).scroll(function(){
-		$(".goto_page_top").show("slow");
-	});		
-	
-	
 	
 	
 	//リスト表示ボタンとボックス表示ボタンで切り替え

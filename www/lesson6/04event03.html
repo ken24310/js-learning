@@ -12,15 +12,14 @@
 <!--この中に処理を記述 開始-->
 <script>
 
-$(document).ready(function() {
+jQuery(function($) {
 	
-		
-	//ここをクリックボタンクリックでリストが開く
-	$(".slide_list dt").click(function() {
-		$(".slide_list dd").slideToggle("fast");
-		
-	});
-		
+	
+	//スクロールしたとき「ページトップへ」ボタン表示
+	$(window).scroll(function(){
+		$(".goto_page_top").show("slow");
+	});		
+	
 });
 
 

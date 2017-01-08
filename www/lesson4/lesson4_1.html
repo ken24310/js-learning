@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>javascript</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    img {
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="heading1">オブジェクトを動かす</h1>
+  <p>
+    <button onClick="kansu1()">ボタン</button>
+  </p>
+  <img id="img1" src="../assets/images/1.jpg" alt="画像" width="300">
+  <!--javascript-->
+  <script>
+//グローバル変数
+var ugoku = 0;
+//-------------------------------------------------
+
+//関数1オブジェクトを変化させる
+//document.getElementById("ID名")でそのIDのプロパティを自由に変更できる
+
+function kansu1(){
+  //document.getElementById("heading1").innerHTML="変わるよ！";
+document.getElementById("img1").src="../assets/images/2.jpg";
+document.getElementById("img1").style.width="100px";
+}
+//-------------------------------------------------
+
+//関数4オブジェクトを移動させる
+function kansu2(){
+  ugoku += 10;
+  document.getElementById("img1").style.left= ugoku +"px";
+}
+
+//タイマー処理で動かす。
+function kansu3(){
+  var timer = setInterval(kansu2,100);
+}
+
+</script>
+  <!--javascript//-->
+</body>
+
+</html>

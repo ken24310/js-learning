@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>javascript</title>
+  <!--CSS-->
+  <style>
+    #hyoji {
+      font-family: "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+      font-weight: bold;
+      font-size: 36px;
+      border: 2px solid #161441;
+    }
+  </style>
+  <!--CSS-->
+</head>
+
+<body>
+  <h1>毎日昼12時までタイムセール</h1>
+  <p>
+    <button onClick="saleCheck()">ボタン</button>
+  </p>
+  <p id="hyoji">ここに時間を表示</p>
+  <script>
+  //グローバル変数
+  //現在の日付を取得
+
+//1000ミリ秒（1秒）ごとに関数を実行する
+var timer = setInterval(jikanHyoji,1000);
+
+function jikanText(){
+  //getXXXで時間、分、秒の数値を取得
+  var hiduke = new Date();
+  var jikan = hiduke.getHours();
+  var fun = hiduke.getMinutes();
+  var byou =hiduke.getSeconds();
+  var timeText = jikan + "時" + fun +"分" + byou +"秒";
+  return timeText;
+}
+
+
+function jikanHyoji(){
+  //id hyojiのテキストに現在時刻を表示する
+  var elem =document.getElementById("hyoji");
+  elem.innerText = jikanText();
+}
+//タイムセールかどうか判定する関数
+function saleCheck(){
+  var hiduke = new Date();
+  var jikan = hiduke.getHours();
+  //12時までならタイムセール、そうでなければ終了
+  if(jikan <= 12){
+  window.alert("タイムセール中です。");
+  }else{
+  window.alert("タイムセール終了しました");
+  }
+}
+
+</script>
+</body>
+
+</html>

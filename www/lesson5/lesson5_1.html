@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>レッスン5-1</title>
+  <!--bootstrap.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap.css//-->
+  <!--jQuery.jsの読み込み-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!--jQuery.jsの読み込み-->
+  <!--jQueryここから-->
+  <script>
+ //推奨される書き方
+  jQuery(function($){
+    $("body").css("background-color","#ccc");
+    $("h1").text("jQuery!");
+    $("h1").css("font-size","100px");
+    $("h1").addClass("bg-primary");
+    $("#main-img").attr("src","../assets/images/5.jpg");
+
+    $(".list-group").append("<li>list</li>");
+      var listText="";
+    for(var i=0; i<6; i++){
+      listText += '<li class="list-group-item">'+'リスト'+i+'</li>';
+
+          $(".list-group").html(listText);
+       }
+  });
+  
+  </script>
+  <!--JSここまで//-->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>レッスン5-1</h1>
+    </header>
+    <ul class="list-group">
+    </ul>
+    <!--画像-->
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-4">
+        <img id="main-img" src="../assets/images/1.jpg" alt="画像" class="img-responsive img-circle">
+      </div>
+    </div>
+    <!--ボタン部分-->
+    <div class="text-center">
+      <button type="button" class="btn btn-success btn-lg">ボタンクリックでイベント発生</button>
+    </div>
+  </div>
+  <!--container//-->
+</body>
+
+</html>
