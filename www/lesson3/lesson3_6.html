@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="lesson3_6.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>お問合せフォーム制作(サンプル)</h1>
+    </header>
+    <form id="form1">
+      <!--名前部分-->
+      <fieldset class="form-group">
+        <label>お名前</label>
+        <input type="text" class="form-control" placeholder="お名前" name="user_name" id="user_name">
+      </fieldset>
+      <!--メールアドレス部分-->
+      <fieldset class="form-group">
+        <label>メールアドレス</label>
+        <input type="email" class="form-control" placeholder="example@mail.com" name="email" id="email">
+      </fieldset>
+      <!--性別部分-->
+      <fieldset class="form-group">
+        <div class="radio">
+          <label><input type="radio" name="sex" value="man" id="sex1"> 男性</label>
+          <label><input type="radio" name="sex" value="woman" id="sex2"> 女性</label>
+        </div>
+      </fieldset>
+      <!--質問カテゴリ-->
+      <fieldset class="form-group">
+        <label>質問するカテゴリ</label>
+        <select class="form-control" id="category" name="category">
+          <option value="1">選択肢１</option>
+          <option value="2">選択肢２</option>
+          <option value="3">選択肢３</option>
+        </select>
+      </fieldset>
+      <!--質問内容-->
+      <fieldset class="form-group">
+        <label>質問内容を入力してください。</label>
+        <textarea class="form-control" name="summary" id="summary" cols="30" rows="10"></textarea>
+      </fieldset>
+      <!--ボタン部分-->
+      <fieldset class="form-group">
+        <div class="col-xs-5">
+          <button type="button" class="btn btn-default">戻る</button>
+        </div>
+        <div class="col-xs-7">
+          <button id="submitBtn" type="submit" class="btn btn-success btn-lg">送信</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

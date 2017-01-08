@@ -5,7 +5,7 @@
 
 [マークダウン -wikipedia](https://ja.wikipedia.org/wiki/Markdown)
 
-[マークダウン記法チートシート](http://qiita.com/GrassWonder/items/c4fd0df2264c73777095)
+[マークダウン記法チートシート](http://qiita.com/tbpgr/items/989c6badefff69377da7)
 
 # Visual Studio Codeについて
 * Microsoft製の多機能エディタ
@@ -44,7 +44,7 @@ CSSクラスの種類についてはこちら
 
 
 ## Bootstrapを利用するには
-* 自身でBootstrap.cssを用意して利用する。
+* 自身でBootstrap.cssをダウンロードして利用する。
 * CDN(コンテンツデリバリネットワーク)によるBootstrapのファイルのリンクを張る
 
 * [Bootstrap 公式サイト(最新版はVer3α)](http://getbootstrap.com/)
