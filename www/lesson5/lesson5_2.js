@@ -9,23 +9,26 @@ jQuery(function ($) {
     $("#img_grp").attr("class", "img_list");
   });
 
-  $("#change_box").click(function () {
+  //onメソッドでイベント指定
+ $("#change_box").on("click",function(){
     $("#img_grp").attr("class", "img_box");
-  });
+ });
+
 
 
   //スクロールしたとき「ページトップへ」ボタン表示
-  $(window).scroll(function () {
+  $(window).on("scroll",function () {
     $(".goto_page_top").show("slow");
   });
 
   //セレクトボックスチェンジで画像を変更
-  $(".select_img select").change(function () {
+  $(".select_img select").on("change",function () {
     var img_num; //セレクトボックスの番号を格納
     var file_name; //画像ファイル名を格納
     img_num = $(".select_img select").val();
+
     file_name = "images/" + img_num + ".jpg";
     $(".select_img img").attr("src",file_name);
   });
-
 });
+

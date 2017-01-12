@@ -47,100 +47,31 @@
 </head>
 
 <body>
-	<h1>じゃんけん</h1>
-	<div class="enemy">
-		<img id="shuffle" src="../assets/images/janken0.jpg" alt="じゃんけん">
-		<p id="hantei">じゃんけんほい</p>
-	</div>
-	<ul class="player">
-		<li>
-			<img src="../assets/images/janken0.jpg" alt="グー" onClick="janken(0)">
-		</li>
-		<li>
-			<img src="../assets/images/janken1.jpg" alt="チョキ" onClick="janken(1)">
-		</li>
-		<li>
-			<img src="../assets/images/janken2.jpg" alt="パー" onClick="janken(2)">
-		</li>
-	</ul>
+	<h1>ランダム関数</h1>
+
+
 
 	<div class="row">
-		<button class="btn" id="restartBtn" onclick="shuffleStart();">再開</button>
+		<button class="btn" id="restartBtn" onclick="showResult();">ガチャスタート</button>
 	</div>
 	<script>
 
 
-//ランダム3択数字を吐き出す
-function setShuffleNum(maxNum){
+//ランダム数字を吐き出す
+function setRndNum(maxNum){
 var rndNum;
 //小数点無しの0-2のランダム数字を作成
-rndNum = Math.floor(Math.random()*maxNum);
+rndNum = Math.random();
 return rndNum;
 }
 
-	/*
-	 じゃんけんの勝敗を判定
-*/
-function jankenHantei(pNum,eNum){
-		//自分の数字と相手の数字を計算した結果、2なら勝ち,1なら負け、0ならあいこの結果になる
-		var hanteiNum = (pNum - eNum+3)%3;
-		//判定によってhanteiTextの文言を変更する
-	if(hanteiNum == 0){
-		return "あいこ";
-	}else if(hanteiNum == 2){
-	return "勝ち！";
-	}else{
-	return "負けた…";
-	};
-}
-/*
-判定結果をテキスト表示
-*/
-function changeHanteiText(id,text){
-	var hanteiText = document.getElementById(id);
-	hanteiText.innerText =text;
+//結果を表示する
+function showResult(){
+window.alert(setRndNum());
 }
 
-//画像ファイルパスの変更
-function changeImgName(num){
-	var imgPath ="../assets/images/janken";
-	var imgNum = num;
-  var imgFileName =imgPath + imgNum +".jpg";
-	return imgFileName;
-}
-
-//画像をランダム表示
-function randomImg(){
-	var imgSrc = changeImgName(setShuffleNum(3));
-	var elem = document.getElementById("shuffle");
-	elem.src=imgSrc;
-}
-
-//時間式シャッフル画像
-var shuffleTimer1;
-function shuffleStart(){
-shuffleTimer1 =setInterval(randomImg,	10);
-}
-window.onload = shuffleStart();
 
 
-//じゃんけん判定時にシャッフルストップ
-function stopImg(num){
-		// clearInterval(timerStart);
-	var imgSrc = changeImgName(num);
-	var elem = document.getElementById("shuffle");
-	elem.src=imgSrc;
-}
-
-//じゃんけんメイン処理
-function janken(playerNum){
-	clearInterval(shuffleTimer1);
-	var enemyNum =setShuffleNum(3);
-	stopImg(enemyNum);
-	var hanteiText = jankenHantei(playerNum,enemyNum); 
-	// 判定に合わせて勝敗テキストを変更
-	changeHanteiText("hantei",hanteiText);
-}
 </script>
 </body>
 

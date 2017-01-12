@@ -14,19 +14,7 @@
   <script>
  //推奨される書き方
   jQuery(function($){
-    $("body").css("background-color","#ccc");
-    $("h1").text("jQuery!");
-    $("h1").css("font-size","100px");
-    $("h1").addClass("bg-primary");
-    $("#main-img").attr("src","../assets/images/5.jpg");
 
-    $(".list-group").append("<li>list</li>");
-      var listText="";
-    for(var i=0; i<6; i++){
-      listText += '<li class="list-group-item">'+'リスト'+i+'</li>';
-
-          $(".list-group").html(listText);
-       }
   });
   
   </script>
@@ -38,8 +26,25 @@
     <header>
       <h1>レッスン5-1</h1>
     </header>
+    <div class="row">
+      
+<nav>
+  <ul class="nav">
+    <li class="nav-item"><a href="">メニュー1</a></li>
+    <li class="nav-item"><a href="">メニュー2</a></li>
+    <li class="nav-item"><a href="">メニュー3</a></li>
+    <li class="nav-item"><a href="">メニュー4</a></li>
+  </ul>
+</nav>
+
+
+    <p>↓空っぽのリスト</p>
     <ul class="list-group">
     </ul>
+    </div>
+
+
+
     <!--画像-->
     <div class="row">
       <div class="col-xs-3 col-xs-offset-4">

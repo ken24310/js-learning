@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQueryのthisについて</title>
+    <!--bootstrap.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap.css//-->
+  <link rel="stylesheet" href="style/style.css">
+  <!--ここにjQery.jsを読み込み-->
+
+
+
+  <script src="lesson5_4.js"></script>
+  <!--ここにjQery.jsを読み込みここまで-->
+</head>
+
+<body>
+  <!--containerここから-->
+  <div id="container">
+    <dl class="slide_list">
+      <dt>ここをクリックすると</dt>
+      <dd>ここが出たり入ったり</dd>
+      <dd>ここが出たり入ったり</dd>
+      <dd>ここが出たり入ったり</dd>
+      <dd>ここが出たり入ったり</dd>
+      <dd>ここが出たり入ったり</dd>
+      <dd>ここが出たり入ったり</dd>
+    </dl>
+    <ul class="change_grp">
+      <li id="change_list">リスト表示</li>
+      <li id="change_box">画像ボックス表示</li>
+    </ul>
+    <article id="img_grp" class="img_box">
+            <p class="img_text">ここのメッセージを変えたい</p>
+      <figure>
+        <img src="images/1.jpg" alt="画像">
+        <figcaption>くらげの画像</figcaption>
+      </figure>
+      <figure>
+        <img src="images/2.jpg" alt="画像">
+        <figcaption>コアラの画像</figcaption>
+      </figure>
+      <figure>
+        <img src="images/3.jpg" alt="画像">
+        <figcaption>ペンギンの画像</figcaption>
+      </figure>
+      <figure>
+        <img src="images/4.jpg" alt="画像">
+        <figcaption>花の画像1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/5.jpg" alt="画像">
+        <figcaption>花の画像2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/6.jpg" alt="画像">
+        <figcaption>山の画像</figcaption>
+      </figure>
+    </article>
+    <figure class="select_img">
+      <img src="images/1.jpg" alt="画像の中身が変わるよ">
+      <figcaption>
+        <select>
+          <option value="1">1番目の画像</option>
+          <option value="2">2番目の画像</option>
+          <option value="3">3番目の画像</option>
+          <option value="4">4番目の画像</option>
+          <option value="5">5番目の画像</option>
+          <option value="6">6番目の画像</option>
+        </select>
+      </figcaption>
+    </figure>
+    <p class="goto_page_top">
+      <a href="#">ページトップへ</a>
+    </p>
+    <footer>
+      <p>フッター</p>
+    </footer>
+  </div>
+  <!--containerここまで-->
+</body>
+
+</html>
