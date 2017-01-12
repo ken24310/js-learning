@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQueryセレクタ練習</title>
+    <!--bootstrap.css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--bootstrap.css//-->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!--問題１．ここにjQery.jsを読み込みなさい
+	(ローカルファイル、CDNどちらでもよい)-->
+
+
+
+
+<!--この中にjQueryを記述-->
+<script>
+//問題2．jQuery関数を使ってbodyタグの背景色を”gray”にしてください。
+
+
+/*問題3．ボタンid”#jsChangeClass”をクリックしたとき
+articleタグ”#img_grp”のクラスを".img_box"から"img_list"に変更しなさい
+*/
+
+
+/*問題4．dlリスト”#jsAccordion”内のクラス”.jsAccTrigger”をクリックしたとき
+ddタグをアコーディオン表示させなさい。
+*/
+
+
+
+</script>
+<!--この中にjQueryを記述//-->
+</head>
+
+<body>
+  <!--containerここから-->
+  <div id="container">
+    <dl id="jsAccordion" class="list-group">
+      <dt class="jsAccTrigger list-group-item list-group-item-success">ここをクリックすると</dt>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+      <dd class="list-group-item">ここが出たり入ったり</dd>
+    </dl>
+    <div class="row">
+      <button type="button" id="jsChangeClass" class="btn btn-info btn-lg">リスト表示</li>
+    </div>
+    <article id="img_grp" class="img_box">
+      <figure>
+        <img src="images/1.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+      <figure>
+        <img src="images/2.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+      <figure>
+        <img src="images/3.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+      <figure>
+        <img src="images/4.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+      <figure>
+        <img src="images/5.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+      <figure>
+        <img src="images/6.jpg" alt="画像">
+        <figcaption>画像の説明</figcaption>
+      </figure>
+    </article>
+    <figure class="select_img">
+      <img src="images/1.jpg" alt="画像の中身が変わるよ">
+      <figcaption>
+        <select>
+          <option value="1">1番目の画像</option>
+          <option value="2">2番目の画像</option>
+          <option value="3">3番目の画像</option>
+          <option value="4">4番目の画像</option>
+          <option value="5">5番目の画像</option>
+          <option value="6">6番目の画像</option>
+        </select>
+      </figcaption>
+    </figure>
+    <p class="goto_page_top">
+      <a href="#">ページトップへ</a>
+    </p>
+    <footer>
+      <p>フッター</p>
+    </footer>
+  </div>
+  <!--containerここまで-->
+</body>
+
+</html>

@@ -17,52 +17,16 @@
   <!--ここにjQery.jsを読み込み-->
   <script src="script/jquery-1.11.3.min.js"></script>
   <!--ライブラリbxSlider.js(スライダー)-->
-  <script src="script/plugin/jquery.bxslider.min.js"></script>
+
   <!--ライブラリcolorbox.js(モーダルウィンドウ)-->
-  <script src="script/plugin/jquery.colorbox-min.js"></script>
+
   <!--この中に処理を記述 開始-->
   <script>
 
 jQuery(function($) {
-
 //この中にbxsliderの処理を記述 開始
 
-	//bxsliderの表示設定
-	//sample1内の画像を動かす
-	$('.sample1').bxSlider({
-		mode: 'horizontal',	//'horizontal', 'vertical', 'fade'
-    auto:true,//オートスクロールの設定
-    pause:2000,//オートスクロール時の停止時間
-    speed:1000,//スライド時のスピード
-		captions: true	//true=imgタグのtitle属性を表示［true=表示、false=非表示］
-	});
-//この中にbxslider処理を記述 終了
 
-//colorboxの表示設定 記述
-//画像モーダルウィンドウ
-
-//基本設定
-	$('.jsModalImg').colorbox({
-    maxWidth:"400px",
-  });
-  //グループ動物
-	$('.jsModalImg[rel="animal"]').colorbox({
-    maxWidth:"400px",
-  });
-  //グループ花
-  	$('.jsModalImg[rel="flower"]').colorbox({
-    maxWidth:"400px",
-  });
-
-//HTMLモーダルウィンドウ
-  $("#jsModalSubmit").colorbox({
-    inline:true,
-    width:"400px",
-    height:"400px",
-    transition:"fade",
-    opacity: 0.7
-  });
-//colorboxの表示設定 記述 終了
 });
 </script>
   <!--この中に処理を記述 開始ここまで-->

@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全体を囲むコンテナ*/
+#container{
+	width:960px;
+	margin:0 auto;
+}
+
+/*リストボックスを変更すると変わる画像ボックス*/
+.select_img{
+	border:1px solid #5F5F5F;
+	border-radius:12px;
+	margin:10px auto;
+	overflow:hidden;
+	width:320px;
+}
+
+.select_img img{
+	display:block;
+	max-width:100%;	
+}
+
+.select_img select{
+	font-size:1.2em;
+	width:100%;
+	
+
+}
+
+
+/*スライドするリスト*/
+.slide_list{
+	width:200px;
+	margin-bottom:100px;
+}
+
+.slide_list dt{
+	background-color:#615AFF;
+	border:1px solid #5F5F5F;
+	color:#FFFFFF;
+	cursor:pointer;
+	font-weight:bold;
+	padding:5px 10px;;
+	margin:0;
+	
+}
+
+
+.slide_list dd{
+	border:1px solid #5F5F5F;
+	color:#000000;
+	cursor:pointer;
+	display:none;
+	padding:5px 10px;;
+	margin:0;
+	
+}
+
+/*ページトップへボタン*/
+.goto_page_top{
+	background-color:#EB87F5;
+	border-radius:8px;
+	display:none;
+	font-weight:bold;
+	padding:10px;
+	position:fixed;
+	text-align:center;
+	width:120px;
+	
+	bottom:10px;
+	right:30px;
+
+}
+
+
+.goto_page_top a{
+	text-decoration:none;
+	color:#000000;
+}
+
+
+/*切り替えボタン*/
+
+.change_grp{
+	display:table;
+	width:320px;
+	
+}
+
+.change_grp li{
+	background-color:#866EFF;
+	border-radius:10px;
+	color:#FFFFFF;
+	cursor:pointer;
+	display:table-cell;
+	padding:10px;
+	text-align:center;
+	
+	
+
+}
+
+
+/*画像ボックス*/
+
+.img_box{
+	width:100%;
+	
+	/*clearfix*/
+	overflow:hidden;
+		
+}
+
+
+.img_box figure{
+	border-radius: 10px;
+	box-shadow: 8px 8px 16px #B0ACAC;
+	float: left;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	
+}
+
+.img_box img{
+	display:block;
+	max-width:100%;
+}
+
+.img_box figcaption{
+	
+	background-color:#000000;
+	color:#FFFFFF;
+	margin:0;
+	padding:10px 10px;
+	position:absolute;
+	width:280px;
+	
+	bottom:0;
+}
+
+
+/*画像リスト*/
+
+.img_list{
+	width:100%;
+}
+
+
+.img_list figure{
+	background-color:#747474;
+	border-bottom:1px solid #BDBDBD;
+	display:table;
+	margin:0;
+	width:100%;
+	
+	/*clearfix*/
+	overflow:hidden;
+	
+	
+}
+
+.img_list img{
+	display:table-cell;
+	padding:10px;
+	vertical-align:middle;
+	width:80px;
+}
+
+.img_list figcaption{
+	color:#FFFFFF;
+	display:table-cell;
+	vertical-align:middle;
+	width:880px;
+}
+
+.sample1{
+	width:100%;
+}
+
+.sample1 img{
+	max-width:100%;
+}
+	

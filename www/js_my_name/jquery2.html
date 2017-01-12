@@ -1,73 +1,57 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <title>jQueryプラグインを読み込む</title>
-  <!--ページ用CSS-->
+<meta charset="UTF-8">
+<title>jQueryセレクタ練習</title>
   <!--bootstrap.css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style/style.css">
-  <!--ページ用CSSここまで-->
+<link rel="stylesheet" href="style/style.css">
+
+
+<!--問題1．ここにstyle/フォルダ内のcolorbox.cssと、jquery.bxslider.cssを読み込みなさい-->
+
+
+
+<!--ここにjQery.jsを読み込み-->
+<script src="script/jquery-1.11.3.min.js"></script>
+
+<!--問題2．ここにscript/pluginフォルダ内,
+jquery.bxslider.min.jsとjquery.colorbox-min.jsを読み込みなさい-->
+
+
   <!--ここにjQUeryのライブラリ用CSSを読み込む-->
   <link rel="stylesheet" href="style/jquery.bxslider.css">
   <link rel="stylesheet" href="style/colorbox.css">
   <!--ここにjQUeryのライブラリ用CSSここまで-->
   <!--ここにjQeryを読み込み-->
-  <!--ここにjQery.jsを読み込み-->
-  <script src="script/jquery-1.11.3.min.js"></script>
   <!--ライブラリbxSlider.js(スライダー)-->
   <script src="script/plugin/jquery.bxslider.min.js"></script>
   <!--ライブラリcolorbox.js(モーダルウィンドウ)-->
   <script src="script/plugin/jquery.colorbox-min.js"></script>
   <!--この中に処理を記述 開始-->
-  <script>
 
+
+<!--この中に処理を記述 開始-->
+<script>
 jQuery(function($) {
+	
+	//問題3．リストid("jsSlider")をjQueryプラグイン bxSliderでスライダーにしなさい。オプションは必要なし
 
-//この中にbxsliderの処理を記述 開始
 
-	//bxsliderの表示設定
-	//sample1内の画像を動かす
-	$('.sample1').bxSlider({
-		mode: 'horizontal',	//'horizontal', 'vertical', 'fade'
-    auto:true,//オートスクロールの設定
-    pause:2000,//オートスクロール時の停止時間
-    speed:1000,//スライド時のスピード
-		captions: true	//true=imgタグのtitle属性を表示［true=表示、false=非表示］
-	});
-//この中にbxslider処理を記述 終了
 
-//colorboxの表示設定 記述
-//画像モーダルウィンドウ
 
-//基本設定
-	$('.jsModalImg').colorbox({
-    maxWidth:"400px",
-  });
-  //グループ動物
-	$('.jsModalImg[rel="animal"]').colorbox({
-    maxWidth:"400px",
-  });
-  //グループ花
-  	$('.jsModalImg[rel="flower"]').colorbox({
-    maxWidth:"400px",
-  });
+	/*問題4．サムネイル画像クラス”.jsModalPic”をクリックした時、jQueryプラグインcolorboxでモーダルウィンドウを表示させなさい。
+	また、オプションでwidth:50%を指定しなさい;
+	*/
 
-//HTMLモーダルウィンドウ
-  $("#jsModalSubmit").colorbox({
-    inline:true,
-    width:"400px",
-    height:"400px",
-    transition:"fade",
-    opacity: 0.7
-  });
-//colorboxの表示設定 記述 終了
-});
+
+
+	
+})
 </script>
-  <!--この中に処理を記述 開始ここまで-->
-</head>
+<!--この中に処理を記述 開始ここまで-->
 
+</head>
 <body>
   <!--containerここから-->
   <div id="container">
@@ -75,7 +59,7 @@ jQuery(function($) {
       <!--スライダー幅指定-->
       <div class="col-xs-push-2 col-xs-8">
         <!-- スライダー画像 -->
-        <ul class="sample1">
+        <ul id="jsSlider">
           <li>
             <img src="images/1.jpg" title="Aの画像を表示します。" alt="A">
           </li>
@@ -97,37 +81,37 @@ jQuery(function($) {
     </div>
     <article id="jsModal1" class="img_box">
       <figure>
-        <a href="images/1.jpg" class="jsModalImg" rel="animal">
+        <a href="images/1.jpg" class="jsModalPic" rel="animal">
           <img src="images/1.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
       </figure>
       <figure>
-        <a href="images/2.jpg" class="jsModalImg" rel="animal">
+        <a href="images/2.jpg" class="jsModalPic" rel="animal">
           <img src="images/2.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
       </figure>
       <figure>
-        <a href="images/3.jpg" class="jsModalImg" rel="animal">
+        <a href="images/3.jpg" class="jsModalPic" rel="animal">
           <img src="images/3.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
       </figure>
       <figure>
-        <a href="images/4.jpg" class="jsModalImg" rel="flower">
+        <a href="images/4.jpg" class="jsModalPic" rel="flower">
           <img src="images/4.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
       </figure>
       <figure>
-        <a href="images/5.jpg" class="jsModalImg" rel="flower">
+        <a href="images/5.jpg" class="jsModalPic" rel="flower">
           <img src="images/5.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
       </figure>
       <figure>
-        <a href="images/6.jpg" class="jsModalImg">
+        <a href="images/6.jpg" class="jsModalPic">
           <img src="images/6.jpg" alt="画像">
         </a>
         <figcaption>画像の説明</figcaption>
@@ -149,5 +133,4 @@ jQuery(function($) {
   </div>
   <!--containerここまで-->
 </body>
-
 </html>
